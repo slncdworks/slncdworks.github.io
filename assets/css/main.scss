@@ -1,0 +1,9 @@
+//  VARIABLES_MIXINS_INCLUDES
+@import "sass/variables", "sass/mixins", "sass/includes";
+//  HEADER_FOOTER
+@import "sass/header", "sass/footer";
+//	FRONT-PAGE COMPONENTS
+//@import "sass/components/front-page/zz-sec-slnc";
+@import "sass/components/front-page/sec-carousel", "sass/components/front-page/sec-certs", "sass/components/front-page/sec-about", "sass/components/front-page/sec-form";
+//	SERVICES COMPONENTS
+@import "sass/components/services/sec-services";
