@@ -1,0 +1,88 @@
+//	COLORS_URL_MISC_HELPERS
+//	COLORS
+$inv: rgba(0, 0, 0, 0);
+$gray: #6c757d;
+$dgray: #343a40;
+$black-05: rgba(0, 0, 0, 0.5);
+$gray2: #969696;
+$white: #f8f9fa;
+$gray-08: rgba(150, 150, 150, 0.8);
+$black-03: rgba(0, 0, 0, 0.3);
+$lbrown-09: rgba(154, 141, 100, 0.9);
+$dbrown-06: rgba(121, 105, 80, 0.6);
+$lblue: #6beffe;
+$white: #f8f9fa;
+$lgray: #a9a9a9;
+$dblue: #0a0a22;
+$lgray2: #9ca0a5;
+//	URL
+:root {
+	--slnc: url(screenshot.png);
+	--cad: url(https://i.imgur.com/bBCnf9F.png);
+	--cvbuild: url(https://i.imgur.com/ZkspYTk.png);
+	--fcc: url(https://i.imgur.com/IbTm1ts.png);
+	--gdg: url(https://i.imgur.com/PpGfQ3i.png);
+	--logo: url(https://i.imgur.com/zHhuFMs.png);
+	--logodes: url(https://i.imgur.com/RbT93R2.png);
+	--slnclogo: url(https://i.imgur.com/WJfUxn2.png);
+	--socmed: url(https://i.imgur.com/in15PIU.png);
+	--webdes: url(https://i.imgur.com/NoN8l8k.png);
+	--cad-ofl: url(assets/img/cad.png);
+	--cvbuild-ofl: url(assets/img/cvbuild.png);
+	--fcc-ofl: url(assets/img/fcc.png);
+	--gdg-ofl: url(assets/img/gdg.png);
+	--logo-ofl: url(assets/img/logo.png);
+	--logodes-ofl: url(assets/img/logodes.png);
+	--slnclogo-ofl: url(assets/img/slnclogo.png);
+	--socmed-ofl: url(assets/img/socmed.png);
+	--webdes-ofl: url(assets/img/webdes.png);
+	--cad-ofl2: url(../assets/img/cad.png);
+	--cvbuild-ofl2: url(../assets/img/cvbuild.png);
+	--fcc-ofl2: url(../assets/img/fcc.png);
+	--gdg-ofl2: url(../assets/img/gdg.png);
+	--logo-ofl2: url(../assets/img/logo.png);
+	--logodes-ofl2: url(../assets/img/logodes.png);
+	--slnclogo-ofl2: url(../assets/img/slnclogo.png);
+	--socmed-ofl2: url(../assets/img/socmed.png);
+	--webdes-ofl2: url(../assets/img/webdes.png);
+}
+//	MISC
+$z1: 9;
+$z2: 99;
+$z3: 999;
+$z4: 9999;
+$z5: 99999;
+$z6: 999999;
+$z7: 9999999;
+$z8: 99999999;
+$z9: 999999999;
+$z10: 9999999999;
+$z11: 99999999999;
+$z12: 999999999999;
+$z13: 9999999999999;
+$z14: 99999999999999;
+$z15: 999999999999999;
+$bd-form: 20px solid $dbrown-06;
+//	HELPERS
+$rh1: calc(1.375rem + 1.5vw);
+$rh2: calc(1.325rem + 0.9vw);
+$rh3: calc(1.3rem + 0.6vw);
+$rh4: calc(1.275rem + 0.3vw);
+$h1: 2.5rem;
+$h2: 2rem;
+$h3: 1.75rem;
+$h4: 1.5rem;
+$h5: 1.25rem;
+$h6: 1rem;
+$g1: 8.33%;
+$g2: 16.66%;
+$g3: 25%;
+$g4: 33.33%;
+$g5: 41.66%;
+$g6: 50%;
+$g7: 58.33%;
+$g8: 66.66%;
+$g9: 75%;
+$g10: 83.33%;
+$g11: 91.66%;
+$g12: 100%;
