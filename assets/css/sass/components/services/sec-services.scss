@@ -1,0 +1,62 @@
+section.sec-services {
+	padding-bottom: 10px;
+
+	.wrap-dgray {
+		border-radius: 0 0 70px 70px;
+
+		@include h1-h6 {
+			padding: 20px 0;
+
+			@include m(ltup) {
+				font-size: 50px;
+			}
+			@include m(tlg) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	@include all($a: gcol-) {
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		&:nth-child(5) {
+			.img {
+				border: 10px solid $lgray;
+			}
+		}
+		.img {
+			width: 500px;
+			height: 290px;
+			border: 10px solid $dgray;
+			border-radius: 20px 0;
+
+			@include m(lt) {
+				width: 450px;
+				height: 270px;
+			}
+			@include m(tsm) {
+				width: 390px;
+				height: 246px;
+			}
+			@include m(mlg) {
+				width: 320px;
+				height: 238px;
+			}
+			@include m(msm) {
+				width: 270px;
+				height: 190px;
+			}
+		}
+		.wrap-brown {
+			border-radius: 30px 0;
+			margin-bottom: 20px;
+
+			.txtfx {
+				padding: 10px;
+			}
+		}
+		.wrap-pagelink {
+			margin-top: -150px;
+		}
+	}
+}
