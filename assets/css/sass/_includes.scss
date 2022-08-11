@@ -1,0 +1,34 @@
+//	HELPERS
+@include minimizer {
+	@include default;
+	@include default-bs;
+	@include cont_cont-fl;
+	@include grid_n-ng {
+		@include gcol-1-12;
+		@include gcol-mlg-1-12_mlg-push-1-12_mlg-pull-1-12;
+		@include gcol-tsm-1-12_tsm-push-1-12_tsm-pull-1-12;
+		@include gcol-tlg-1-12_tlg-push-1-12_tlg-pull-1-12;
+		@include gcol-lt-1-12_lt-push-1-12_lt-pull-1-12;
+		@include gcol-dt-1-12_dt-push-1-12_dt-pull-1-12;
+		@include gcol-tv-1-12_tv-push-1-12_tv-pull-1-12;
+	}
+	@include flex_n-top_n-bot_n-lft_n-rgt;
+	@include tbl_n-lft_n-rgt {
+		@include -valign_n-top_n-bot;
+	}
+	@include img_n-formal_n-con_ {
+		@include _n-top_n-bot_n-lft_n-rgt_;
+		@include _n-lt_n-rt_n-lb_n-rb;
+	}
+	@include talign_n-lft_n-rgt_n-just;
+	@include xbul_pd50_boxfx_txtfx_wrap-pagelink;
+	@include btn-navtgl($bd-w: 2px, $bd-clr: #000, $dims: 35px, $fs: 30px, $ico1-clr: #000, $c: "\f00d", $ico2-clr: #000, $l: -2px);
+	@include wrap-navbar;
+}
+//	MISC
+@include wrap-opaquebg;
+@include wrap-brown_n-bd-20;
+@include btn-blue;
+@include btn-white;
+@include h-sansita;
+@include wrap-dgray;
