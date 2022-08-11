@@ -1,0 +1,53 @@
+section.sec-certs {
+	.wrap-brown {
+		padding: 30px 0;
+
+		@include m(mlg) {
+			padding: 20px 0;
+		}
+	}
+	@include all($a: gcol-) {
+		height: 300px;
+
+		@include m(mlg) {
+			height: 250px;
+		}
+		.img {
+			height: 200px;
+
+			@include h1-h6 {
+				@include t-sharetech;
+			}
+		}
+		&:nth-child(1) {
+			background: $dblue;
+
+			.img {
+				width: 500px;
+
+				@include m(mlg) {
+					width: 480px;
+				}
+				@include m(msm) {
+					width: 315px;
+				}
+				@include h1-h6 {
+					color: #fff;
+				}
+			}
+		}
+		&:nth-child(2) {
+			border: 2px solid $lgray2;
+
+			.img {
+				@include m(msm) {
+					height: 180px;
+					width: 300px;
+				}
+				@include h1-h6 {
+					color: $lgray2;
+				}
+			}
+		}
+	}
+}
