@@ -1,0 +1,33 @@
+section.sec-slnc {
+	height: 2000px;
+
+	.img {
+		width: 1200px;
+		height: 900px;
+
+		@include m(mdt) {
+			width: 1100px;
+			height: 825px;
+		}
+		@include m(lt) {
+			width: 892px;
+			height: 669px;
+		}
+		@include m(tlg) {
+			width: 668px;
+			height: 501px;
+		}
+		@include m(tsm) {
+			width: 476px;
+			height: 357px;
+		}
+		@include m(mlg) {
+			width: 381px;
+			height: 285.75px;
+		}
+		@include m(msm) {
+			width: 220px;
+			height: 165px;
+		}
+	}
+}
