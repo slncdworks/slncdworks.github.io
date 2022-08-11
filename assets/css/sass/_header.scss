@@ -1,0 +1,159 @@
+header.hdr {
+	background: $gray2;
+	padding: 5px 0;
+
+	@include n-stky;
+	@include all($a: gcol-) {
+		height: 50px;
+
+		&:nth-child(1) {
+			.img {
+				height: 50px;
+				width: 166.67px;
+
+				@include m(msm) {
+					width: 50px;
+					background-position: left;
+				}
+			}
+		}
+		&:nth-child(2) {
+			a {
+				color: $white;
+				margin-left: 5px;
+
+				@include p-hover_p-active {
+					color: $dgray;
+					transition: 0.5s;
+				}
+			}
+		}
+	}
+	.wrap-navbar {
+		@include m(tlg) {
+			text-align: center;
+			background: $gray2;
+			top: 0;
+			right: 0;
+		}
+		@include n-coll-hide-sm(fixed) {
+			height: 100vh;
+			width: 0vw;
+		}
+		@include n-coll-show-sm {
+			width: 100vw;
+		}
+		.menu-container {
+			@include m(tlg) {
+				height: 460px;
+			}
+			a {
+				color: $white;
+				font-weight: 700;
+
+				@include p-hover_p-active {
+					color: $dgray;
+					transition: 0.5s;
+				}
+			}
+			@include all($a: nav-1) {
+				@include m(ltup) {
+					margin: 0 20px;
+				}
+				@include m(tlg) {
+					margin: 30px 0;
+				}
+			}
+			.li-nav-1 {
+				@include m(ltup) {
+					@include p-after {
+						border-left: 2px solid $dgray;
+						height: 30px;
+						top: -3px;
+						margin: 0 23px;
+					}
+				}
+				@include m(tlg) {
+					@include p-before {
+						border-bottom: 2px solid $dgray;
+						height: 40px;
+						width: 320px;
+						left: -110px;
+						z-index: -1;
+
+						@include m(msm) {
+							width: 185px;
+							left: -50px;
+						}
+					}
+				}
+			}
+			.li-hov-services-nav-1 {
+				@include n-hov {
+					opacity: 1;
+				}
+				@include p-hover {
+					& > a {
+						color: $dgray;
+						transition: 0.5s;
+
+						@include p-after-fa($c: "\f107") {
+							transform: rotate(180deg);
+							transition: transform 0.5s;
+						}
+					}
+				}
+				& > a {
+					@include p-after-fa($c: "\f107") {
+						padding: 0 8px;
+					}
+					@include n-active-sm {
+						color: $dgray;
+						transition: 0.5s;
+
+						@include p-after-fa($c: "\f107") {
+							transform: rotate(180deg);
+							transition: transform 0.5s;
+						}
+						@include p-before {
+							border-bottom: 2px solid $dgray;
+							height: 40px;
+							width: 320px;
+							left: -120px;
+							z-index: -1;
+
+							@include m(msm) {
+								width: 185px;
+								left: -60px;
+							}
+						}
+					}
+				}
+				& > .sub-menu {
+					width: 200px;
+					left: -30px;
+					border-top: 18px solid $inv;
+
+					@include n-coll-hide(absolute) {
+						opacity: 0;
+					}
+					@include n-coll-show-sm {
+						opacity: 1;
+					}
+					@include m(ltup) {
+						background: $gray-08;
+					}
+					@include m(tlg) {
+						left: -52px;
+					}
+					.li-nav-2 {
+						@include m(tlg) {
+							text-align: center;
+						}
+						margin: 15px 30px;
+					}
+				}
+			}
+		}
+	}
+}
