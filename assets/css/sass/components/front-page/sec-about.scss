@@ -1,0 +1,86 @@
+section.sec-about {
+	.wrap-brown {
+		border-radius: 70px 0;
+		padding: 40px;
+
+		@include m(mlg) {
+			padding: 20px;
+		}
+		@include all($a: gcol-) {
+			&:nth-child(2) {
+				@include m(ltup) {
+					height: 92px;
+				}
+				.tbl {
+					@include m(tlg) {
+						margin-left: auto;
+					}
+					.img {
+						width: 508.5px;
+						height: 508.5px;
+						border: 10px solid $dbrown-06;
+						border-radius: 5px;
+
+						@include m(lt) {
+							width: 387px;
+							height: 387px;
+						}
+						@include m(tlg) {
+							margin-bottom: 20px;
+						}
+						@include m(tsm) {
+							width: 321.6px;
+							height: 321.6px;
+						}
+						@include m(mlg) {
+							width: 200px;
+							height: 200px;
+						}
+					}
+				}
+			}
+			&:nth-child(3) {
+				@include m(ltup) {
+					float: right;
+				}
+				.h-sansita {
+					margin-bottom: 20px;
+
+					@include m(ltup) {
+						font-size: 30px;
+					}
+					@include m(tlg) {
+						text-align: center;
+					}
+					i {
+						vertical-align: text-top;
+					}
+				}
+				p {
+					font-size: 20px;
+				}
+			}
+			&:nth-child(odd) {
+				padding-left: 40px;
+
+				@include m(tlg) {
+					padding-left: 0;
+				}
+			}
+			.txtfx {
+				margin-bottom: 20px;
+
+				@include m(ltup) {
+					font-size: 60px;
+				}
+				@include m(tlg) {
+					font-size: 50px;
+					text-align: center;
+				}
+				@include m(tsm) {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+}
