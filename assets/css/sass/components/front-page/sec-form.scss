@@ -1,0 +1,152 @@
+section.sec-form {
+	background: $dgray;
+
+	.wrap-dgray {
+		@include h1-h6 {
+			padding: 20px 0;
+
+			@include m(ltup) {
+				font-size: 50px;
+			}
+		}
+	}
+	.wrap-brown {
+		border-top: $bd-form;
+		border-left: $bd-form;
+		border-right: $bd-form;
+		border-radius: 70px 70px 0 0;
+
+		form {
+			padding: 20px 0 60px;
+			width: 780px;
+			margin: 0 auto;
+
+			@include m(dtup) {
+				width: 1000px;
+			}
+			@include m(tlg) {
+				width: 470px;
+			}
+			@include m(tsm) {
+				width: 365px;
+			}
+			@include m(mlg) {
+				width: 295px;
+			}
+			@include m(msm) {
+				width: 230px;
+			}
+			.txtfx {
+				margin-bottom: 20px;
+
+				@include m(tv) {
+					margin-bottom: 30px;
+				}
+			}
+			@include all($a: gcol-) {
+				padding: 0 20px;
+
+				@include m(dtup) {
+					padding: 0 30px;
+				}
+				&:nth-last-child(1n + 2) {
+					input {
+						padding: 15px;
+						width: 305px;
+
+						@include m(dtup) {
+							width: 450px;
+						}
+						@include m(tlg) {
+							width: 450px;
+						}
+						@include m(tsm) {
+							width: 345px;
+						}
+						@include m(mlg) {
+							width: 305px;
+						}
+						@include m(msm) {
+							width: 240px;
+						}
+					}
+				}
+				&:nth-child(3),
+				&:nth-child(4) {
+					margin-top: 20px;
+				}
+				&:nth-child(5) {
+					margin-top: 35px;
+
+					#submit {
+						width: 230px;
+						font-size: 30px;
+					}
+				}
+				@include m(tsm) {
+					&:nth-child(2) {
+						margin-top: 20px;
+					}
+				}
+				@include m(mlg) {
+					padding: 0;
+				}
+				.select2-container {
+					width: 150px !important;
+
+					@include m(msm){
+						width: 85px !important;
+					}
+					.select2-selection {
+						height: 58px;
+
+						.select2-selection__rendered {
+							line-height: 58px;
+						}
+						.select2-selection__arrow {
+							top: 15px;
+						}
+					}
+				}
+				#mobile {
+					width: 150px;
+
+					@include m(dtup) {
+						width: 295px;
+					}
+					@include m(tlg) {
+						width: 295px;
+					}
+					@include m(tsm) {
+						width: 190px;
+					}
+					@include m(mlg) {
+						width: 150px;
+					}
+				}
+				#code {
+					width: 75px;
+				}
+				#phone {
+					width: 225px;
+
+					@include m(dtup) {
+						width: 370px;
+					}
+					@include m(tlg) {
+						width: 370px;
+					}
+					@include m(tsm) {
+						width: 265px;
+					}
+					@include m(mlg) {
+						width: 225px;
+					}
+					@include m(msm) {
+						width: 160px;
+					}
+				}
+			}
+		}
+	}
+}
